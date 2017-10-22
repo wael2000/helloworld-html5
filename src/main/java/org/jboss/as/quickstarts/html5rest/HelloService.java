@@ -28,4 +28,18 @@ public class HelloService {
         return "Hello " + name + "!";
     }
 
+    String badMethod(int number){
+      String uselessString = "I'm useless";
+      try
+      {
+        if(10/number>1){
+          // do nothing
+        }
+      }
+      catch(Exception exp){
+        // don't hanfle exception
+      }
+      return null;
+    }
+
 }
